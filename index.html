@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/balanca.png">
+    <title>App - GET</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <h1>APP Health</h1>
+        <form name="frmIMC">
+            <input type="number" name="txtIdade" id="" placeholder="Idade" class="Caixa">
+            <input type="number" name="txtPeso" id="" placeholder="Peso (Kg)" class="Caixa">
+            <input type="number" name="txtAltura" id="" placeholder="Altura (Metros)" class="Caixa">
+            <h2>Sexo:</h2>
+            <p class="sexo">
+                <input type="radio" name="grupo" id="m">Masculino
+                <input type="radio" name="grupo" id="f">Feminino
+            </p>
+            <p>
+                <select name="nivel" id="atividade">
+                    <option value="" selected>Selecione o nivel de atividade física</option>
+                    <option value="1.2">Sedentário (Trabalho de escritório)</option>
+                    <option value="1.375">Exercício leve (1 - 2 dias/semana)</option>
+                    <option value="1.55">Exercício moderado (3 - 5 dias/semana)</option>
+                    <option value="1.725">Exercício pesado (6 - 7 dias/semana)</option>
+                    <option value="1.9">Atleta (2x dia)</option>
+
+                </select>
+            </p>
+            <p class="btn-div">
+                <input type="button" value="Calcular" onclick="calcularIMC()" class="btn" href="#freq">
+                <input type="reset" value="Limpar" class="btn" onclick="limpar()">
+            </p>
+        </form> 
+        <div class="resultado">
+            <div class="imc">
+                <img src="icons/reset.png" alt="Marcador IMC" id="grafico">
+                <h3 id="imc">IMC:</h3>
+                <h4 id="status">Status:</h4>
+            </div>
+            <div class="coracao">
+                <h3 id="freq">FCM</h3>
+                <img src="icons/heart2.png" alt="coração" id="grafico">
+            </div>
+            <div class="calorias">
+                <h3>Calorias por dia:</h3>    
+                <h4 id="calorias"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="health.js"></script>
+</body>
+
+</html>

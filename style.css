@@ -1,0 +1,386 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(56, 58, 68);
+    scroll-behavior: smooth;
+}
+
+#main {
+    text-align: center;
+    color: rgb(68, 171, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sexo .sexoM,
+.sexoF {
+    opacity: 1;
+    cursor: pointer;
+    width: 40%;
+    height: 40vh;
+    background-color: #454545;
+    color: #5555;
+
+}
+
+
+h1 {
+    font-size: 10vmin;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.Caixa {
+    border: 3px solid black;
+    height: 60px;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 3vmax;
+    color: rgb(68, 171, 255);
+    background-color: rgb(56, 58, 68);
+    font-weight: bold;
+
+}
+
+.Caixa::placeholder {
+    color: rgb(68, 171, 255);
+}
+
+.Caixa:focus {
+    background-color: rgb(85, 84, 84);
+    transition: 0.5s;
+    color: rgb(68, 171, 255);
+    border: 3px solid black;
+}
+
+h2 {
+    font-size: 3vmax;
+}
+
+.btn {
+    width: 70%;
+    height: 40px;
+    color: rgb(68, 171, 255);
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(56, 58, 68);
+    border: 2px black solid;
+    font-size: 1.5em;
+
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 2vmax;
+
+}
+
+.btn:hover {
+    background-color: rgb(68, 171, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+img {
+    margin-top: 30px;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+#freq {
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+}
+
+.coracao {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    animation: infinite pulso 2s;
+}
+
+.coracao img {
+    margin-bottom: 10px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#atividade {
+    background-color: rgb(56, 58, 68);
+    color: rgb(68, 171, 255);
+    border: 2px solid black;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 2vmax;
+}
+
+.btn-div {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+@keyframes pulso {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    /* retirar as setinhas o input number do chrome */
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    /* retirar as setinhas o input number fire fox*/
+
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* PC */
+
+@media(min-width: 1200px) {
+    body {
+        font-family: sans-serif;
+        background-color: rgb(56, 58, 68);
+        scroll-behavior: smooth;
+    }
+
+    body::-webkit-scrollbar {
+        width: 12px;
+        margin-left: 3px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background:rgb(56, 58, 68);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color:#454545;
+        border-radius: 20px;
+        }
+
+    #main {
+        text-align: center;
+        color: rgb(68, 171, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sexo .sexoM,
+    .sexoF {
+        opacity: 1;
+        cursor: pointer;
+        width: 40%;
+        height: 40vh;
+        background-color: #454545;
+        color: #5555;
+
+    }
+
+
+    h1 {
+        font-size: 10vmin;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .Caixa {
+        border: 3px solid black;
+        height: 40px;
+        border-radius: 20px;
+        padding: 15px;
+        font-size: 2em;
+        color: rgb(68, 171, 255);
+        background-color: rgb(56, 58, 68);
+        font-weight: bold;
+
+    }
+
+    .Caixa::placeholder {
+        color: rgb(68, 171, 255);
+    }
+
+    .Caixa:focus {
+        background-color: rgb(85, 84, 84);
+        transition: 0.5s;
+        color: rgb(68, 171, 255);
+        border: 3px solid black;
+    }
+
+    h2 {
+        font-size: 3vmax;
+    }
+
+    .btn {
+        width: 70%;
+        height: 40px;
+        color: rgb(68, 171, 255);
+        font-weight: bold;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgb(56, 58, 68);
+        border: 2px black solid;
+        font-size: 1.5em;
+
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sexo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        font-size: 2em;
+        margin-top: -20px;
+    }
+
+    .btn:hover {
+        background-color: rgb(68, 171, 255);
+        color: white;
+        transition: 0.5s;
+    }
+
+    img {
+        margin-top: 30px;
+    }
+
+    input::placeholder {
+        color: aliceblue;
+    }
+
+    #freq {
+        position: absolute;
+        font-size: 2em;
+        color: white;
+        z-index: 1;
+    }
+
+    .coracao {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        animation: infinite pulso 2s;
+    }
+
+    .coracao img {
+        margin-bottom: 10px;
+    }
+
+    #atividade {
+        background-color: rgb(56, 58, 68);
+        color: rgb(68, 171, 255);
+        border: 2px solid black;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    .btn-div {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    @keyframes pulso {
+        0% {
+            scale: 1;
+        }
+
+        50% {
+            scale: 1.2;
+        }
+
+        100% {
+            scale: 1;
+        }
+    }
+
+    .resultado {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+
+
+    input[type=number]::-webkit-inner-spin-button {
+        /* retirar as setinhas o input number do chrome */
+        -webkit-appearance: none;
+    }
+
+    input[type=number] {
+        /* retirar as setinhas o input number fire fox*/
+
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+
+}
