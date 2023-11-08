@@ -2,6 +2,7 @@
 
 Um app que calcular seu IMC (Indice de Massa Corporea), sua frequencia cardiaca e ainda calcula o quanto de calorias deverao ser ingeridas por dia
 
+![Faça seu teste](https://gustavoteodorogabilan.github.io/GET/)
 ## APP
 Treinamento e aprendizagem de HTML - CSS - JS
 
